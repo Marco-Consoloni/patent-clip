@@ -13,7 +13,7 @@ As shown in Fig. 1, the system queries a patent database containing (text, image
 
 ![multimodal_patent_retrieval](assets/multimodal_patent_retrieval_new.png)
 
-**Fig. 1** - *Multimodal Patent Search Engine.*
+**Fig. 1** - *Explanatory example of the multimodal patent retrieval system.*
 
 The system is based on fine-tuning the foundational vision–language model developed by OpenAI, namely Contrastive Language–Image Pre-training (CLIP), on 1.5M text–image pairs, and includes the scripts for testing and analyzing its performance (see associated publication).
 
