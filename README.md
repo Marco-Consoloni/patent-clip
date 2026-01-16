@@ -11,7 +11,7 @@ The goal of the project is to develop a multimodal information retrieval system 
 
 As shown in Fig. 1, the system queries a patent database containing (text, image) pairs, allowing the model to identify the patent images and text most similar to the input query. 
 
-![multimodal_patent_retrieval](assets/multimodal_patent_retrieval.png)
+![multimodal_patent_retrieval](assets/multimodal_patent_retrieval_new.png)
 
 **Fig. 1** - *Multimodal Patent Search Engine.*
 
