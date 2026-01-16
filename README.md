@@ -1,6 +1,6 @@
 # Patent CLIP 
 
-This repository contains the code used for developing a proof-of-concept for a multimodal patent search engine. It is part of the following published work: 
+This repository contains the code used for developing a proof-of-concept for a multimodal patent retrieval system. It is part of the following published work: 
 
 *"Consoloni, M., Giordano, V., Galatolo, F. A., Cimino, M. G. C. A., & Fantoni, G. (2025). Uncovering the limits of visual-language models in engineering knowledge representation. Proceedings of the Design Society, 5, 3261-3270.* https://doi.org/10.1017/pds.2025.10340" 
 
@@ -11,11 +11,11 @@ The goal of the project is to develop a multimodal information retrieval system 
 
 As shown in Fig. 1, the system queries a patent database containing (text, image) pairs, allowing the model to identify the patent images and text most similar to the input query. 
 
-![citations_by_examiner](assets/multimodal_patent_retrieval.png)
+![multimodal_patent_retrieval](assets/multimodal_patent_retrieval.png)
 
 **Fig. 1** - *Multimodal Patent Search Engine.*
 
-The system is based on fine-tuning the foundational vision–language model developed by OpenAI, namely Contrastive Language–Image Pre-training (CLIP), and includes the scripts for testing and analyzing its performance (see associated publication).
+The system is based on fine-tuning the foundational vision–language model developed by OpenAI, namely Contrastive Language–Image Pre-training (CLIP), on 1.5M text–image pairs, and includes the scripts for testing and analyzing its performance (see associated publication).
 
 
 
