@@ -1,0 +1,6 @@
+/env
+/wandb
+/docker
+/database
+/docker-backup
+/models

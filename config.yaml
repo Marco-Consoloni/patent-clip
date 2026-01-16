@@ -1,0 +1,69 @@
+qdrant:
+  db: "./database.db"
+  memory: false
+
+dataset:
+  path: /vast/marco/Data/datasets
+  fields:
+    text: first_claim
+    image: front_img
+
+query:
+  n: 30
+  model: base
+  cls: A42B3
+  paths:
+    query: /vast/marco/Data_Google_Patent/json/query
+    documents: /vast/marco/Data_Google_Patent/json/document
+    results: ./results
+  fields:
+    text: first_claim
+    image: front_img
+  apply_filter: False
+  joint: False
+
+retrieve:
+  cls: A42B3
+  collection: text
+  paths:
+    vectors: ./vectors
+
+model:
+  base: openai/clip-vit-base-patch32
+  max_length: 77
+
+optimizer:
+  name: Adam
+  args:
+    lr: 1e-8
+
+train:
+  batch_size: 256
+  num_workers: -1 
+  seed: -1
+  use_gpu: true
+  gpus: 1
+  max_epochs: 100
+  checkpoint_every: 0.25
+  validate_every: 0.1
+  save_file: /models/final.ckpt
+
+validation:
+  batch_size: 256
+  num_workers: -1
+
+test:
+  batch_size: 256
+  num_workers: -1
+
+early_stop:
+  metric: validation/loss
+  mode: min
+  patience: 5
+
+wandb:
+  log: True
+  entity: mlpi
+  project: patent-clip
+
+debug: False
