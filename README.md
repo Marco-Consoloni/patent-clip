@@ -7,13 +7,15 @@ This repository contains the code used for developing a proof-of-concept for a m
 It was also submitted to the CodeFest2024 of the European Patent Office on Generative AI: https://www.epo.org/en/news-events/in-focus/codefest/codefest-2024-generative-ai 
 
 ## The Project
-The goal of the project is to develop a multimodal information retrieval system that can use both patent images and text to searche patent databases. As shown in Fig. 1, the system queries a patent database containing (text, image) pairs, allowing the model to identify the patent images and text most similar to the input query. This is not currently 
+The goal of the project is to develop a multimodal information retrieval system that can use both patent images and text to searche patent databases. Existing approaches for information retrieval applied on patents have overlooked the potential of analyzing patent drawings in conjunction with textual data to enhance the accuracy of prior art searches. Moreover, querying patent databases directly with images is not currently supported by these commercial search platforms since drawings cannot be indexed or searched in the same way as text. 
+
+As shown in Fig. 1, the system queries a patent database containing (text, image) pairs, allowing the model to identify the patent images and text most similar to the input query. 
 
 ![citations_by_examiner](assets/search_engine.png)
 
 **Fig. 1** - *Multimodal Patent Search Engine.*
 
-Existing approaches for information retrieval applied on patents have overlooked the potential of analyzing patent drawings in conjunction with textual data to enhance the accuracy of prior art searches. To do so we finetuned the foundational VL model, developed by OpenAI, known as Contrastive Language-Image Pre-training (CLIP) model, to perform prior art search.
+The system is based on fine-tuning the foundational vision–language model developed by OpenAI, namely Contrastive Language–Image Pre-training (CLIP), and includes the scripts for testing and analyzing its performance (see associated publication).
 
 
 
