@@ -1,32 +1,11 @@
 # Patent CLIP 
 
-This repository contains the code developed to finetuning CLIP model on patent front images and first claims. It is a project developed by 
+This repository contains the code for fine-tuning a CLIP model on patent images and textual data, and for analyzing its performance.
 
-- Department of Informatics, University of Pisa; 
-- National PhD Course in Artificial Intelligence.
+The fine-tuned model was employed in the following published work:
 
-The course focuses on:
-- Motivations behind XAI;
-- Core XAI methods and libraries;
-- Open research challenges in XAI.
+The trained model was used in the following published work: *"Consoloni, M., Giordano, V., Galatolo, F. A., Cimino, M. G. C. A., & Fantoni, G. (2025). Uncovering the limits of visual-language models in engineering knowledge representation. Proceedings of the Design Society, 5, 3261-3270.* https://doi.org/10.1017/pds.2025.10340"
 
-## Project Overview
-Plant disease classification from images presents several key challenges:
-
-- Early detection during initial phases of infection;
-- Detection in non-homogenous and complex backgrounds;
-- Detection on both single and multiple overlapping leaves.
-
-To address these challenges, we trained two deep learning models for plant disease classification and analyzed their detection capabilities using post-hoc XAI techniques, including: **IntGrad**, **Rise**, **LIME**, **Grad-CAM** and **Grad-CAM++** .
-
-![readme_img](assets/readme_img.png)
-
-**Fig. 1** - *Example of saliency maps of strawberry leaves affected by the leaf scorch disease with non-homogeneous background.*
-
-These methods enable the interpretation of model predictions by highlighting the most relevant image regions contributing to each classification decision (see Fig. 1).
-
-- **Code:** `./XAI-project/XAI_project_code.ipynb`
-- **Report:** `./XAI-project/XAI_project_report.pdf`
 
 
 
